@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="150dp"
+       android:background="@drawable/hasanitem"
+       android:layout_margin="4dp">
+       <LinearLayout
+           android:orientation="vertical"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_margin="7dp"
+           android:layout_gravity="center"
+           android:layout_weight="3">
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Total : "
+               android:textColor="@android:color/white"
+               android:padding="5dp"
+               android:id="@+id/total"
+               android:layout_weight="1"
+               android:textSize="15dp"/>
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               android:text="Success : "
+               android:id="@+id/success"
+               android:textColor="@android:color/white"
+               android:padding="5dp"
+               android:textSize="15dp"/>
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Read : "
+               android:layout_weight="1"
+               android:id="@+id/read"
+               android:textColor="@android:color/white"
+               android:padding="5dp"
+               android:textSize="15dp"/>
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Clicked"
+               android:id="@+id/clicked"
+               android:textColor="@android:color/white"
+               android:layout_weight="1"
+               android:padding="5dp"
+               android:textSize="15dp"/>
+
+       </LinearLayout>
+
+       <LinearLayout
+           android:orientation="vertical"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_gravity="center"
+           android:layout_margin="7dp"
+           android:layout_weight="2">
+
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Sent List : "
+               android:layout_marginTop="10dp"
+               android:textColor="@android:color/white"
+               android:padding="10dp"
+               android:id="@+id/sentlist"
+               android:layout_weight="1"
+               android:textSize="15dp"/>
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               android:text="Sent Time : "
+               android:id="@+id/senttime"
+               android:textColor="@android:color/white"
+               android:padding="10dp"
+               android:textSize="15dp"/>
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Sent Temp : "
+               android:id="@+id/senttemp"
+               android:layout_weight="1"
+               android:textColor="@android:color/white"
+               android:padding="10dp"
+               android:layout_marginBottom="10dp"
+               android:textSize="15dp"/>
+
+
+
+       </LinearLayout>
+
+   </LinearLayout>
+</LinearLayout>

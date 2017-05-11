@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main"
+    tools:context=".After_Login">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#0691e2"
+    android:padding="50dp"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:src="@drawable/email"
+        android:id="@+id/emailimageview"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/emailimageview"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerInParent="true">
+            <Button
+                android:layout_width="170dp"
+                android:layout_height="70dp"
+                android:id="@+id/sendemailbutton"
+                android:text="Send Email"
+                android:background="@drawable/menu"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"/>
+            <Button
+                android:layout_width="170dp"
+                android:layout_height="70dp"
+                android:id="@+id/reportbutton"
+                android:text="Report"
+                android:layout_gravity="center"
+                android:background="@drawable/menu"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                />
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:id="@+id/logoutbtn"
+                android:text="Logout"
+                android:background="@drawable/menu"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

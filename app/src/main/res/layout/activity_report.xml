@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main"
+    android:orientation="vertical"
+    tools:context="email_marketing.azad.hallaji.farzad.emailmarketing.Report">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#0691e2"
+        android:paddingTop="40dp"
+        android:paddingBottom="40dp"
+        android:id="@+id/asad">
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Select Period that You Want to Show Report"
+            android:textColor="@android:color/white"
+            android:textStyle="normal"
+            android:typeface="sans"
+            android:textSize="18dp"
+            android:layout_centerInParent="true"
+            android:id="@+id/headertext"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:id="@+id/muhdavayeasli"
+       android:orientation="vertical">
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical"
+           android:layout_centerInParent="true"
+           android:id="@+id/laylingereftanedate"
+           android:padding="10dp"
+           android:visibility="visible"
+           android:gravity="center">
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="Start Time"
+               android:textColor="@android:color/white"
+               android:textSize="25dp"
+               android:gravity="center"/>
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="10dp"
+               android:text="Press here to set From date : "
+               android:id="@+id/fromTextView"
+               android:gravity="center"
+               android:padding="15dp"/>
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="End Time"
+               android:layout_marginTop="40dp"
+               android:textColor="@android:color/white"
+               android:textSize="25dp"
+               android:gravity="center"/>
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:gravity="center"
+               android:id="@+id/toTextView"
+               android:layout_marginTop="10dp"
+               android:text="Press here to set To date : "
+               android:padding="15dp"/>
+
+           <Button
+               android:layout_width="130dp"
+               android:layout_height="70dp"
+               android:text="Get Report"
+               android:layout_marginTop="40dp"
+               android:id="@+id/reportbuttoninreport"
+               android:layout_gravity="center_horizontal"
+               android:background="@drawable/login2"/>
+
+       </LinearLayout>
+
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical"
+           android:id="@+id/layrellistviewreport"
+           android:visibility="gone">
+
+           <ListView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:padding="10dp"
+               android:layout_margin="20dp"
+               android:id="@+id/listviewreport"
+               android:layout_weight="1">
+           </ListView>
+
+           <Button
+               android:layout_width="130dp"
+               android:layout_height="70dp"
+               android:id="@+id/Homebuttonfromreport"
+               android:text="Home"
+               android:background="@drawable/menu"
+               android:layout_weight="0"
+               android:layout_gravity="center"/>
+
+       </LinearLayout>
+
+
+   </RelativeLayout>
+
+</LinearLayout>
